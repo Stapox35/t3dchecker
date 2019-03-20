@@ -2,8 +2,7 @@
 #include <fstream>
 using namespace std;
 
-string * tablica = new string[100000];
-unsigned long long i=0;
+unsigned long  i=0;
 
 
 class T3dmodel
@@ -25,7 +24,7 @@ string line;
     while(t3d_in.good())
     {
         t3d_in>>line;
-        tablica[i] = line;
+
         if(line != "")
         {
                 if(line[0] == '/' && line[1] == '/')
